@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block services_active %} active {% endblock %}
+{% block content %}
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade" style="background-image: url(assets/img/services-page-title-bg.jpg);">
+    <div class="container">
+      <h1>Services</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'clientside:homepage' %}">Home</a></li>
+          <li class="current">Services</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Services</h2>
+      <p>These services are designed to meet the needs of individuals, businesses, and organizations that require
+        reliable
+        and
+        efficient delivery solutions. </p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+          <div>
+            <h4 class="title">Trucking </h4>
+            <p class="description">We have built an extensive network of trusted carriers across various regions. Our
+              partnerships with reputable trucking companies enable us to provide reliable and efficient transportation
+              services,
+              ensuring your goods reach their destination on time.</p>
+          </div>
+        </div>
+        <!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+          <div>
+            <h4 class="title">Storage</h4>
+            <p class="description">We understand that proper storage is crucial for businesses to efficiently manage
+              inventory and streamline their operations. Whether you require short-term or long-term storage. </p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+          <div>
+            <h4 class="title">Cargo</h4>
+            <p class="description">We understand the importance of protecting your valuable cargo. As part of our cargo
+              services,
+              we offer comprehensive cargo insurance options to provide additional peace of mind. Our insurance coverage
+              protects against loss,
+              damage, or theft during transportation, offering financial security for your goods.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+          <div>
+            <h4 class="title">Packaging</h4>
+            <p class="description">Our experienced team can assist you in designing custom packaging solutions that meet
+              your specific requirements. We
+              take into consideration the nature of your products, their fragility, and any specific handling
+              instructions
+              to create
+              packaging that provides optimal protection.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+          <div>
+            <h4 class="title">logistics</h4>
+            <p class="description">We offer comprehensive logistics services to support your supply chain and streamline
+              the movement of goods from point
+              of origin to the final destination. We understand the complexities of logistics management and provide
+              tailored
+              solutions to meet your specific requirements</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+          <div>
+            <h4 class="title">Warehousing</h4>
+            <p class="description">We have state-of-the-art warehousing facilities equipped with advanced security
+              systems
+              to ensure the safety and
+              protection of your goods. Our facilities are monitored 24/7, and we have strict access control measures in
+              place to
+              prevent unauthorized entry.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Services Section -->
+
+
+  <!-- Service Cards Section -->
+  <section id="service-cards" class="service-cards section">
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-item">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="card-bg"><img src="{% static 'assets/img/cards-1.jpg' %}" alt=""></div>
+              </div>
+              <div class="col-xl-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h4 class="card-title">Express delivery</h4>
+                  <p>Need it there fast? Our express delivery service ensures your packages arrive at their destination
+                    with speed and
+                    precision.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Card Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-item">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="card-bg"><img src="{% static 'assets/img/cards-5.jpg' %}" alt=""></div>
+              </div>
+              <div class="col-xl-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h4 class="card-title">Same day shipping</h4>
+                  <p>Urgent deliveries? We offer reliable same-day shipping services to meet your critical deadlines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Card Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-item">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="card-bg"><img src="{% static 'assets/img/cards-3.jpg' %}" alt=""></div>
+              </div>
+              <div class="col-xl-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h4 class="card-title">Package Tracking</h4>
+                  <p>Stay informed every step of the way. Track your packages in real-time with our advanced tracking
+                    system.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Card Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-item">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="card-bg"><img src="{% static 'assets/img/cards-4.jpg' %}" alt=""></div>
+              </div>
+              <div class="col-xl-7 d-flex align-items-center">
+                <div class="card-body">
+                  <h4 class="card-title">Freight shipping</h4>
+                  <p>For larger shipments, our freight shipping solutions provide efficient and cost-effective delivery
+                    options.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Card Item -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Service Cards Section -->
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <p>What Our Customers Say</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper">
+        <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                Atlas Logistics consistently delivers my packages on time, even with tight deadlines. Their speed and
+                reliability are
+                unmatched!
+              </p>
+              <div class="profile mt-auto">
+                <h3>Sarah M</h3>
+                <h4>Business Owner</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                I needed a last-minute delivery, and Atlas Logistics came through! They were fast, efficient, and
+                professional.
+              </p>
+              <div class="profile mt-auto">
+                <h3>David L</h3>
+                <h4>Event Planner</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                I appreciate the personalized attention I receive from Atlas Logistics. They truly care about their
+                customers.
+              </p>
+              <div class="profile mt-auto">
+                <h3>Jessica</h3>
+                <h4>Online Retailer</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                Atlas Logistics' secure handling gives me peace of mind. I know my packages are in good hands.
+              </p>
+              <div class="profile mt-auto">
+                <h3>Kevin</h3>
+                <h4>Business Owner</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                I've used Atlas Logistics for everything from small packages to large freight shipments. They're always
+                reliable and
+                efficient.
+              </p>
+              <div class="profile mt-auto">
+                <h3>Jennifer W.</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section><!-- /Testimonials Section -->
+
+</main>
+{% endblock %}

@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block homepage_active %} active {% endblock %}
+
+{% block hero %}
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+
+  <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <h1 data-aos="fade-up">Bettter courier experience with Atlas Logistics</h1>
+        <blockquote data-aos="fade-up" data-aos-delay="100">
+          <p>Experience the efficiency, reliability and speed of Atlas Logistics.
+            Contact us today and let us take care of your logistics needs. </p>
+        </blockquote>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+          <a href="{% url 'clientside:track' %}" class="btn-get-started">Track Your Package</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Hero Section -->
+
+{% endblock %}
+
+{% block content %}
+<!-- Why Us Section -->
+<section id="why-us" class="why-us section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Why Choose Us</h2>
+
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row g-0">
+
+      <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
+        <img src="{% static 'assets/img/why-us-bg.jpg' %}" alt="">
+      </div>
+
+      <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="swiper">
+          <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "centeredSlides": true,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                }
+              }
+            </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3">Let's grow your business together</h3>
+                <h4 class="mb-3">Experience reliability and efficiency
+                </h4>
+                <p>Contact us today to discuss how we can support your logistics requirements and contribute to the
+                  success of your
+                  business.</p>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3">We are committed to delivering exceptional service</h3>
+                <h4 class="mb-3">Transparency and open communication</h4>
+                <p>Are fundamental values for us. We believe in building strong and collaborative relationships with our
+                  clients, based on trust, integrity, and mutual success. </p>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="item">
+                <h3 class="mb-3">Our Network</h3>
+                <h4 class="mb-3">Extensive global network
+                </h4>
+                <p>Our extensive global network of partners and carriers enables us to offer comprehensive coverage and
+                  reach in
+                  numerous
+                  countries and regions worldwide.</p>
+              </div>
+            </div><!-- End slide item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Why Us Section -->
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p>These services are designed to meet the needs of individuals, businesses, and organizations that require reliable
+      and
+      efficient delivery solutions. </p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+        <div>
+          <h4 class="title">Trucking </h4>
+          <p class="description">We have built an extensive network of trusted carriers across various regions. Our
+            partnerships with reputable trucking companies enable us to provide reliable and efficient transportation
+            services,
+            ensuring your goods reach their destination on time.</p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+        <div>
+          <h4 class="title">Storage</h4>
+          <p class="description">We understand that proper storage is crucial for businesses to efficiently manage
+            inventory and streamline their operations. Whether you require short-term or long-term storage. </p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+        <div>
+          <h4 class="title">Cargo</h4>
+          <p class="description">We understand the importance of protecting your valuable cargo. As part of our cargo
+            services,
+            we offer comprehensive cargo insurance options to provide additional peace of mind. Our insurance coverage
+            protects against loss,
+            damage, or theft during transportation, offering financial security for your goods.</p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+        <div>
+          <h4 class="title">Packaging</h4>
+          <p class="description">Our experienced team can assist you in designing custom packaging solutions that meet
+            your specific requirements. We
+            take into consideration the nature of your products, their fragility, and any specific handling instructions
+            to create
+            packaging that provides optimal protection.</p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+        <div>
+          <h4 class="title">logistics</h4>
+          <p class="description">We offer comprehensive logistics services to support your supply chain and streamline
+            the movement of goods from point
+            of origin to the final destination. We understand the complexities of logistics management and provide
+            tailored
+            solutions to meet your specific requirements</p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+        <div>
+          <h4 class="title">Warehousing</h4>
+          <p class="description">We have state-of-the-art warehousing facilities equipped with advanced security systems
+            to ensure the safety and
+            protection of your goods. Our facilities are monitored 24/7, and we have strict access control measures in
+            place to
+            prevent unauthorized entry.</p>
+          <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section">
+
+  <img src="{% static 'assets/img/cta-bg.jpg' %}" alt="">
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Track Your Package</h3>
+          <p>Dedicated to providing efficient and reliable shipping and transportation solutions.we have built a
+            reputation for excellence, customer satisfaction, and a commitment to meeting the diverse needs of our
+            clients.</p>
+          <a class="cta-btn" href="{% url 'clientside:track' %}">Track Your Package</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="mb-0">Features for</h3>
+        <h3>Your Business</h3>
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="icon-list d-flex">
+              <i class="bi bi-eye" style="color: #ff8b2c;"></i>
+              <span>Bulk shipping capabilities</span>
+            </div>
+          </div><!-- End Icon List Item-->
+
+
+          <div class="col-md-6">
+            <div class="icon-list d-flex">
+              <i class="bi bi-star" style="color: #ffa76e;"></i>
+              <span>Time sensitive delivery</span>
+            </div>
+          </div><!-- End Icon List Item-->
+
+          <div class="col-md-6">
+            <div class="icon-list d-flex">
+              <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
+              <span>Secure Package handling</span>
+            </div>
+          </div><!-- End Icon List Item-->
+
+          <div class="col-md-6">
+            <div class="icon-list d-flex">
+              <i class="bi bi-activity" style="color: #ff5828;"></i>
+              <span>Logistics management</span>
+            </div>
+          </div><!-- End Icon List Item-->
+        </div>
+      </div>
+      <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
+        <div class="phone-wrap">
+          <img src="{% static 'assets/img/iphone.jpg' %}" alt="Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <h4>A dedicated<br>Team</h4>
+          <p>Our team of skilled professionals is dedicated to providing tailored solutions that address the unique
+            needs of each
+            client.</p>
+          <a href="#about" class="btn-get-started">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Features Section -->
+
+{% endblock %}
